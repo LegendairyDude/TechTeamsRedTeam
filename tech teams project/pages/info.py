@@ -1,0 +1,71 @@
+import streamlit as st
+from streamlit_extras.colored_header import colored_header
+import webbrowser
+
+colored_header(
+    label="Information",
+    description=" ",
+    color_name="violet-70",
+)
+
+st.sidebar.success("Please select a page.")
+
+url = "https://www.heartandstroke.ca/how-you-can-help/volunteer/join-us/newfoundland-and-labrador"
+st.info("This project was made for the [Heart and Stroke Foundation](%s)" % url)
+
+st.header("Signs that you are having a stroke")
+
+st.text("There are ways to know if you are having a stroke. Is your:")
+st.subheader("Face drooping?")
+st.subheader("Can you raise both arms?")
+st.subheader("Is your speech slured?")
+st.text("If these are the case, it is time to call 911.")
+
+st.header("Risks")
+
+st.text("There is many risks that are in your control to stop.")
+st.subheader("If you have a unhealthy diet")
+st.text("The types of food affect your health. Learning how to eat healthy can make your\nhealth better and decrease the risk.")
+st.subheader("If you are physically inactive")
+st.text("The more active you are, the less likely you are to have a risk of a stroke. You\nalso have an increased risk of diabetes, cancer and dementia.")
+st.subheader("If you are in a unhealthy weight")
+st.text("Having a lot of weight can lead to high blood pressure, high cholesterol,\ndiabetes and sleep apnea. Being obese can double the risk of a stroke.")
+st.subheader("If you are a smoker")
+st.text("Smoking triples the risk of a stroke. Quitting is the best thing you can do\nto prevent heart disease and strokes.")
+st.subheader("If you are stressed")
+st.text("Stress is something that everyone has. People who have high levels of stress or\nprolonged stress have higher blood pressure and cholesterol.")
+st.subheader("If you use excessive amounts of alcohol and drugs")
+st.text("Heavy drinking is a big risk factor for high blood pressure and strokes. If you do\ndrink, limit yourself to small amounts, and drink lots of water at the same time.")
+st.text("Drugs such as amphetamines, cannabis, cocaine, ecstacy, heroin, and LSD increases\nthe risk of strokes and heart disease. When a stroke does occur, it usually happens\nwithin hours of drug use.")
+st.subheader("Birth control and HRT")
+st.text("Any type of medication that includes estrogen increases the risk of herat attacks,\nstrokes and mini-strokes.")
+
+st.header("Preventions")
+
+st.text("There are ways you can prevent the risks.")
+
+st.subheader("Eating healthy")
+st.text("Eating lots of vegetables, cooking at home, limiting your processed foods, are\nall ways to help prevent the risk of strokes.")
+st.subheader("Staying active")
+st.text("Start to walk more, rake some leaves, start to play a sport. All and any of these\nare great ways to keep staying acive and decrease the risk.")
+st.subheader("Reduce stress")
+st.text("The best way to deal with your stress is to find out what your stressors are. This\ncan be done by taking a stress test and see what triggers your stress symptoms.\nYou can then start to manage to remove this stress.")
+st.subheader("Maintaining a healthy weight")
+st.text("You should eat healthy foods, choose protein from food sources, avoid highly\nprocessed foods such as processed meats, fried foods, frozen meals, and snack\nfoods. Drink lots of water. Make portions of foods a reasonable size. Eat 3 meals\nand 2 healthy snacks per day.")
+
+st.header("Risks that you cannot control")
+
+st.text("These are risks that are out of your control.")
+
+st.subheader("Sex")
+st.text("The risk of heart disease and strokes will increase after menopause.")
+st.subheader("Age")
+st.text("The older you get, the higher the risk you are of a stroke.")
+st.subheader("Medical history")
+st.text("If you have close relative that has had a stroke, you are at risk.")
+st.subheader("Personal circumstances")
+st.text("Personal circumstances and environmental factors will have a toll on your health.")
+
+st.header("Donate")
+if st.button('Click to donate to the foundation'):
+    webbrowser.open("https://www.heartandstroke.ca/how-you-can-help/ways-to-give")
