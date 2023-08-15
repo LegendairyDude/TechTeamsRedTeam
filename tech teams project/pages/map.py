@@ -26,15 +26,20 @@ plugins.Draw().add_to(m)
 
 m.save('map.html')
 
+col1, col2, col3, col4 = st.columns(4)
+
 if st.button('Click to view map'):
     with st.spinner(text='In progress'):
-        time.sleep(3)
-        HtmlFile = open("map.html", 'r', encoding='utf-8')
-        source_code = HtmlFile.read() 
-        print(source_code)
-        components.html(source_code, height = 600)
-        time.sleep(1)
-        HtmlFile = open("legend.html", 'r', encoding='utf-8')
-        source_code = HtmlFile.read() 
-        print(source_code)
-        components.html(source_code, height = 600)
+        with col1:
+            time.sleep(3)
+            HtmlFile = open("map.html", 'r', encoding='utf-8')
+            source_code = HtmlFile.read() 
+            print(source_code)
+            components.html(source_code, height = 600, width = 536)
+            time.sleep(1)
+        with col4:
+            with st.expander("See Legend"):
+                HtmlFile = open("legend.html", 'r', encoding='utf-8')
+                source_code = HtmlFile.read() 
+                print(source_code)
+                components.html(source_code, height = 600)
