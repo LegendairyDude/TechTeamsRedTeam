@@ -34,12 +34,16 @@ for row in df.itertuples(index=False,name=None):
                                                                 <strong>Region: </strong> {row[6]}<br>
                                                                 {f'<strong>Opening Hours: </strong> {str(row[7])}<br>' if pd.isnull(row[7]) is not True else ''}
                                                                 {f'<strong>Closing Hours: </strong> {row[8]}<br>' if pd.isnull(row[8]) is not True else ''}
-                                                                {f'<strong>Telephone: </strong> {format_phone_number(row[9])}<br>' if pd.isnull(row[9]) is not True else ''}
+                                                                {f'<strong>Telephone: </strong> {format_phone_number(row[9])}<br>' if pd.isna(row[9]) is not True else ''}
+                                                                {f'<strong>Additional: </strong> {format_phone_number(row[10])}<br>' if pd.isna(row[10]) is not True else ''}
+                                                                {f'<strong>Email: </strong> {row[11]}<br>' if pd.isna(row[11]) is not True else ''}
+                                                                {f'<strong>Website: </strong> <a href="{row[12]}"  target="_blank">{row[12]}</a><br>' if pd.isna(row[12]) is not True else ''}
+                                                                {f'<strong>Info: </strong> {row[15].title()}<br>' if pd.isna(row[15]) is not True else ''}
 
 
                                                                 
                                                                 </font>
-                                                                """, max_width=1000),
+                                                                """, max_width=500),
  tooltip=f'{row[0].title()}').add_to(m)
         print(pd.isnull(row[8]))
         
