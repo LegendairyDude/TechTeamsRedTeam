@@ -13,17 +13,18 @@ st.sidebar.success("Please select a page.")
 url = "https://www.heartandstroke.ca/how-you-can-help/volunteer/join-us/newfoundland-and-labrador"
 st.info("This project was made for the [Heart and Stroke Foundation](%s)" % url)
 
-st.header("Signs that you are having a stroke")
 
-st.text("There are ways to know if you are having a stroke. Is your:")
-st.subheader("Face drooping?")
-st.subheader("Can you raise both arms?")
-st.subheader("Is your speech slured?")
-st.text("If these are the case, it is time to call 911.")
 
-st.header("Risks")
+st.text("There are ways to know if you are having a stroke:")
 
-st.text("There is many risks that are in your control to stop.")
+st.image("fast.png")
+
+colored_header(
+    label="Risks",
+    description="There is many risks that are in your control to stop.",
+    color_name="violet-70",
+)
+
 st.subheader("If you have a unhealthy diet")
 st.text("The types of food affect your health. Learning how to eat healthy can make your\nhealth better and decrease the risk.")
 st.subheader("If you are physically inactive")
@@ -40,10 +41,11 @@ st.text("Drugs such as amphetamines, cannabis, cocaine, ecstacy, heroin, and LSD
 st.subheader("Birth control and HRT")
 st.text("Any type of medication that includes estrogen increases the risk of herat attacks,\nstrokes and mini-strokes.")
 
-st.header("Preventions")
-
-st.text("There are ways you can prevent the risks.")
-
+colored_header(
+    label="Preventions",
+    description="There are ways you can prevent the risks.",
+    color_name="violet-70",
+)
 st.subheader("Eating healthy")
 st.text("Eating lots of vegetables, cooking at home, limiting your processed foods, are\nall ways to help prevent the risk of strokes.")
 st.subheader("Staying active")
@@ -53,9 +55,11 @@ st.text("The best way to deal with your stress is to find out what your stressor
 st.subheader("Maintaining a healthy weight")
 st.text("You should eat healthy foods, choose protein from food sources, avoid highly\nprocessed foods such as processed meats, fried foods, frozen meals, and snack\nfoods. Drink lots of water. Make portions of foods a reasonable size. Eat 3 meals\nand 2 healthy snacks per day.")
 
-st.header("Risks that you cannot control")
-
-st.text("These are risks that are out of your control.")
+colored_header(
+    label="Risks that you cannot control",
+    description="These are risks that are out of your control.",
+    color_name="violet-70",
+)
 
 st.subheader("Sex")
 st.text("The risk of heart disease and strokes will increase after menopause.")
