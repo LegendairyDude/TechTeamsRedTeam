@@ -431,3 +431,77 @@ def mapcode():
 
  
 st_data = st_folium(mapcode(), width=710)
+with st.expander('See Extra Info'):
+    st.header('Social Workers')
+    st.subheader('Stephanie Lawrence')
+    st.text('Compassion Counselling\nCorner Brook, Newfoundland\n(709) 400-2763\n(709) 400-2763')
+    st.markdown('''"I have a wealth of experience in working with individuals and families and I
+            strive to help people learn healthy coping skills in order to improve their 
+            mental health and wellness or to help overcome everyday life difficulties.
+            I am registered Social Worker with a background in clinical counselling and
+            advanced trainings in numerous therapeutic modalities and approches, all while
+            maintaining the highest standards of professionalism and confidentiality."   
+            - *Stephanie Lawrence*''')
+    st.subheader('Suzanne Barry-Kroening')
+    st.text('Stephenville, Newfoundland\n(709) 800-3879\n(709) 800-3880')
+    st.markdown('''
+                15 years of experience in counselling, crisis intervention, community development and building community partnerships.
+                ''')
+    st.subheader('Debbie A. Walsh')
+    st.text('Stephenville, Newfoundland\n(709) 200-0406\n(709) 200-0407')
+    st.markdown('''
+In Person & Online Consults, offers 36 years of experience working with students ages 4 to 18 in the education system. has spent the last 10 years as a school counsellor. 
+                 Has developed skills as an assessor in areas such as ADHD and learning disorders
+                ''')
+    st.subheader('Lance Jackson')
+    st.text('Perpetual Evolution Counselling and Wellness\nSt. Georges, Newfoundland\n(709) 499-0444\n(709) 499-0445')
+    st.markdown('''
+Has over 2 decades working with people of all ages that suffer from past trauma, depression, anxiety, and interpersonal relationship issues  
+[Website](https://pecounselling.com/)
+''')
+    st.subheader('Strength Counselling Services')
+    st.text('Channel-Port-aux-Basques/Grand Bank, Newfoundland\n(709) 500-2599\n(709) 500-2599')
+    st.markdown('''
+Individual counselling, co-dependent recovering, couples and family therapy, life coaching.  
+[Website](https://strengthcounselling.ca/)
+''')
+    st.subheader('Nichola Park')
+    st.text('Meridian Holistic Health Center, 38 Brook Street, Newfoundland\n(709) 800-7021\n(709) 800-7022')
+    st.markdown('''
+With over five years experience working with individuals with mental health and addictions Nichola is skilled in individual therapy, and addiction assessments
+''')
+    st.subheader('Emma Chafe')
+    st.text('Isle-aux-Morts, Newfoundland\n(709) 700-3774\n(709) 700-3775')
+    st.markdown('''
+As a trauma focused Art Therapist she uses movement, meditation, and art making to enable a different kind of relationship with difficult experiences. 
+                Living with kindness and compassion requires strong clear boundaries and the skills to communicate them.  
+                [Website](https://www.rowanwellness.com/)
+''')
+    st.subheader('Tammy Breen')
+    st.text('Corner Brook, Newfoundland\n(709) 501-8399\n(709) 501-8400')
+    st.markdown('''
+Has experience in counselling individuals of all ages who are impacted by addictions, family issues, separation and divorce, anxiety and depression, eating disorders, trauma, and grief and loss.
+''')
+    st.subheader('Bonnie Hancock-Moore')
+    st.text('Deer Lake, Newfoundland\n(709) 400-2801\n(709) 400-2802\nBhmcounselling@gmail.com')
+    st.markdown('''
+Has extensive knowledge of mental illness, addictions, child maltreatment, attachment, FASD, Trauma, etc. is an ally to LBGTQ+ Individuals and a provides a safe space for all  
+                [Website](https://bhmcounselling.wixsite.com/website)
+''')
+    st.header('Psychologist/Psychiatrist')
+    st.subheader('Cindy Russell')
+    st.text('Stephenville, Newfoundland\n(709) 501-5126\n(709) 501-5127')
+    st.markdown('Online Only, specialize in trauma, is EMDR trained and works with clients to help them process and let go of trauma while reducing it’s negative impact on their lives')
+    st.subheader('The Serenity Space- Sarah Whelan')
+    st.text('Corner Brook, Newfoundland\n(343) 453-2822\n(343) 453-2823')
+    st.markdown('She incorporates a variety of therapeutic modalities including emotion focused therapy, parts work, mindfulness, DBT, and the Gottman method. She has experience working with trauma, ED/disordered eating, ADHD, BPD, anxiety/stress, relationship diffictulties and couples.')
+    
+    st.header('Peer Support Group')
+    st.subheader('lifewiseNL')
+    st.text('Opening Hours: 10:00 AM Mon-Fri\nClosing Hours: 12:00 AM Mon-Fri\n(855) 753-2560')
+    st.markdown('''Online call center with virtual peer support services, At Lifewise, their purpose is to bring hope to, and reduce stigma for those individuals living with mental health and addictions issues.   
+                [Website](https://lifewisenl.ca/)''')
+    st.subheader('eMental health')
+    st.text('Open 24/7')
+    st.markdown('''Online call center, Self-help, mutual aid and support groups  
+                [Website](https://www.ementalhealth.ca/Newfoundland-and-Labrador/Self-help-Mutual-Aid-and-Support-Groups/index.php?m=heading&ID=44)''')
